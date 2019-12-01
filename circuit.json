@@ -1,0 +1,15 @@
+{
+    "inputs" : ["a", "b", "c", "d"],
+    "outputs" : ["r"],
+    "wires" : ["tmp"],
+    "assigns" : {
+        "tmp" : {
+            "inputs" : ["a", "b", "c"],
+            "gate" : "majority"
+        },
+        "r" : {
+            "inputs" : ["tmp", "a", "d"],
+            "gate" : "majority"
+        }
+    }
+}

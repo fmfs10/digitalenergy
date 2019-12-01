@@ -1,0 +1,16 @@
+{
+	"inputs" : ["a", "b", "c", "d"],
+	"outputs" : ["r"],
+	"gates" : {
+		"MAJ1" : {
+			"inputs" : ["a", "b", "m2Out"],
+			"type": "majority",
+			"outputs": "r"
+		},
+		"MAJ2" : {
+			"inputs" : ["b", "c", "d"],
+			"type": "majority",
+			"outputs": ["m2Out"]
+		}
+	}
+}
